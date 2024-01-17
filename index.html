@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.108.0">
+    <title>Cryptoland</title>
+    <link rel="stylesheet" href="styles.css">
+    
+
+    
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .center-cards {
+            display: flex;
+            justify-content: center;
+        }
+
+      body {
+          background-color: #181818; /* Set the background color to dark */
+          color: #fff; /* Set the text color to white */
+        }
+
+      .text-muted {
+          color: #fff !important; /* Set the text color for the class text-muted to white */
+        }
+
+      #map {
+        width: 100%; /* Set the width to 80% for responsiveness */
+        max-width: 500px; /* Set the maximum width of the map */
+        height: 250px; /* Set the height of the map */
+        }
+
+      .chart-container {
+        max-width: 500px;
+        margin: 40px auto;
+      }
+
+      .carousel-item img {
+            max-height: 500px;
+        }
+    </style>
+
+    
+  </head>
+  <body>
+    
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">All About the Market</h4>
+              <p style="color: white;"></p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">Contact</h4>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                <li><a href="#" class="text-white">Follow on Facebook</a></li>
+                <li><a href="#" class="text-white">Email us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <strong>Crypto</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    
+
+<main>
+<br><br>
+  
+  <h1 style="text-align: center;">Currencies We Work with Current Value</h1> <br>
+
+
+
+  <!-- Coin Cards -->
+  <div class="album  center-cards">
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+       
+        <div class="col">
+          <div class="card shadow-sm" style="max-width: 300px; max-height: 500px; background-color: #2d2c2c;">
+            <img src="Pics\bitcoin_94576.png" class="card-img-top mx-auto d-block" alt="..." style="width: 200px; height: 200px;">
+            <div class="card-body text-center">
+              <p class="card-text">Bitcoin</p>
+              <p class="card-text">46,312$</p>
+              <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        
+
+        <div class="col">
+          <div class="card shadow-sm" style="max-width: 300px; max-height: 300px; max-height: 500px; background-color: #2d2c2c;">
+            <img src="Pics\ethereum.png" class="card-img-top mx-auto d-block" alt="..." style="width: 200px; height: 200px;">
+            <div class="card-body text-center">
+              <p class="card-text">Ethereum</p>
+              <p class="card-text">2,612.80$<p>
+              <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+        
+        <div class="col">
+          <div class="card shadow-sm" style="max-width: 300px; max-height: 500px; background-color: #2d2c2c;">
+            <img src="Pics\usdt-coin-7425289-6044470.webp" class="card-img-top mx-auto d-block" alt="..." style="width: 200px; height: 200px;">
+            <div class="card-body text-center">
+              <p class="card-text">Tether</p>
+              <p class="card-text">0.999$</p>
+              <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="col">
+          <div class="card shadow-sm" style="max-width: 300px; max-height: 500px; background-color: #2d2c2c;">
+            <img src="Pics\solana.png" class="card-img-top mx-auto d-block" alt="..." style="width: 200px; height: 200px;">
+            <div class="card-body text-center">
+              <p class="card-text">Solana</p>
+              <p class="card-text">94.23$</p>
+              <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        
+      </div>
+    </div>
+</div>
+
+<br><br>
+
+
+<!-- Carousel -->
+
+<section>
+  <div id="carouselExampleCaptions" class="carousel slide" style="margin: 30%;margin-top: 2%;margin-bottom: 2%;">
+      <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+
+          <!-- Bitcoin Chart -->
+          <div class="carousel-item active">
+              <div class="chart-container">
+                  <canvas id="bitcoinChart"></canvas>
+              </div>
+              <div class="carousel-caption d-none d-md-block">
+                  
+              </div>
+          </div>
+
+          <!-- Ethereum Chart -->
+          <div class="carousel-item">
+              <div class="chart-container">
+                  <canvas id="ethereumChart"></canvas>
+              </div>
+              <div class="carousel-caption d-none d-md-block">
+                  
+              </div>
+          </div>
+
+          <!-- Tether Chart -->
+          <div class="carousel-item">
+              <div class="chart-container">
+                  <canvas id="tetherChart"></canvas>
+              </div>
+              <div class="carousel-caption d-none d-md-block">
+                  
+              </div>
+          </div>
+
+          <!-- Solana Chart -->
+          <div class="carousel-item">
+              <div class="chart-container">
+                  <canvas id="solanaChart"></canvas>
+              </div>
+              <div class="carousel-caption d-none d-md-block">
+                  
+              </div>
+          </div>
+
+          <!-- Add your other carousel items here -->
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+      </button>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+      // Placeholder data for the last 6 months
+      var months = ['July', 'August', 'September', 'October', 'November', 'December'];
+      var bitcoinData = [43015.82, 43166.11, 43206.69, 34667.78, 42511.10, 42860.94];
+      var ethereumData = [1876.52, 1724.52, 1693.97, 1819.86, 2055.28, 2319.95];
+      var tetherData = [1.010, 1.062, 1.005, 1.002, 1.011, 1.014];
+      var solanaData = [24.75, 21.01, 21.73, 38.55, 61.44, 105.13];
+
+      createChart('bitcoinChart', 'Bitcoin', months, bitcoinData);
+      createChart('ethereumChart', 'Ethereum', months, ethereumData);
+      createChart('tetherChart', 'Tether', months, tetherData);
+      createChart('solanaChart', 'Solana', months, solanaData);
+
+      function createChart(canvasId, currencyName, labels, data) {
+          var ctx = document.getElementById(canvasId).getContext('2d');
+          var myChart = new Chart(ctx, {
+              type: 'line',
+              data: {
+                  labels: labels,
+                  datasets: [{
+                      label: currencyName,
+                      data: data,
+                      backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                      borderColor: 'rgba(75, 192, 192, 1)',
+                      borderWidth: 1
+                  }]
+              },
+              options: {
+                  scales: {
+                      y: {
+                          beginAtZero: false
+                      }
+                  }
+              }
+          });
+      }
+  });
+</script>
+        
+
+        
+</main>
+
+<div class="container">
+  <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+      </ul>
+      <p class="text-center text-muted">All about the market</p>
+
+      <!-- Google Maps iframe -->
+      <div id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13524.772986086151!2d34.7865973!3d32.0640216!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4b70c925e5ed%3A0x9e629a46351e04c3!2sJohn%20Bryce%20Training!5e0!3m2!1sen!2sil!4v1705471819751!5m2!1sen!2sil" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+  </footer>
+</div>
+  
+
+
+    
+
+      
+  </body>
+</html>
