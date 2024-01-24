@@ -48,7 +48,7 @@
 
       .nav-scroller {
         position: relative;
-        z-index: 2;
+        z-index: 1000;
         height: 2.75rem;
         overflow-y: hidden;
       }
@@ -63,6 +63,10 @@
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
       }
+
+      .navbar-toggler {
+         z-index: 1001; 
+      } 
 
       .center-cards {
             display: flex;
@@ -113,40 +117,28 @@
   <body>
     
     <header>
-      <div class="collapse bg-dark" id="navbarHeader">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-8 col-md-7 py-4">
-              <h4 class="text-white">All About the Market</h4>
-              <p style="color: white;"></p>
-            </div>
-            <div class="col-sm-4 offset-md-1 py-4">
-              <h4 class="text-white">Contact</h4>
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-white">Follow on Twitter</a></li>
-                <li><a href="#" class="text-white">Follow on Facebook</a></li>
-                <li><a href="#" class="text-white">Email us</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="navbar navbar-dark bg-dark shadow-sm fixed-top">
-        <div class="container">
-          <a href="#" class="navbar-brand d-flex align-items-center">
-            <strong>Crypto</strong>
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
+          <div class="container">
+              <a href="#home" class="navbar-brand d-flex align-items-center"> 
+                  <strong>Crypto</strong>
+              </a>
+              <nav>
+                  <ul class="nav">
+                      <li class="nav-item"><a class="nav-link" href="#current-values" style="color: #fff;">Current Values</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#recommendations" style="color: #fff;">Recommendations</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#contact" style="color: #fff;">Contact</a></li>
+                  </ul>
+              </nav>
+          </div>
       </div>
-    </header>
+  </header>
     
 
 <main>
 <br><br><br><br><br>
   
+
+  <section id="current-values">
   <h1 style="text-align: center;">Currencies We Work with Current Value</h1> <br>
 
 
@@ -217,13 +209,15 @@
       </div>
     </div>
 </div>
+</section>
 
 <br><br><br>
 
 
 <!-- Carousel -->
 
-<section>
+<section id="charts">
+
   <div id="carouselExampleCaptions" class="carousel slide" style="margin: 30%;margin-top: 2%;margin-bottom: 2%;">
       <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -284,6 +278,7 @@
           <span class="visually-hidden">Next</span>
       </button>
   </div>
+
 </section>
 
 <script>
@@ -326,7 +321,10 @@
   });
 </script>
 
-<br><br>
+<br><br><br>
+
+<section id="recommendations">
+
 
 <!-- Recommendations -->
 <div class="album center-cards text-center">
@@ -357,12 +355,17 @@
     </div>
   </div>
 </div>
-
+</section>
         
 
         
 </main>
 
+<br><br>
+
+
+
+<section id="contact">
 <div class="container">
   <footer class="py-3 my-4">
       <ul class="nav justify-content-center border-bottom pb-3 mb-3">
@@ -379,7 +382,7 @@
       </div>
   </footer>
 </div>
-  
+</section>
 
 
     
